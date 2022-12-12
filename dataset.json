@@ -1,0 +1,41 @@
+
+{ "intents": [
+
+
+        { "tag": "Greeting_1",
+          "patterns": ["Hello", "Hey", "Hi", "Hi there", "How are you", "Good day", "Is anyone there ?"],
+          "responses": ["Hello! How can I help you ?", "Good to see you! How can I help you ?", "Welcome! How can I help you ?"],
+          "context": [""]
+        },
+
+
+        { "tag": "Greeting_2",
+          "patterns": ["How you doing?", "How are you?", "What's up?", "Hello how are you?"],
+          "responses": ["Amazing, thanks for asking! How can I help you ?", "Totally fine! How can i help you ?"],
+          "context": [""]
+        },
+
+
+        { "tag": "Farewell",
+          "patterns": ["Goodbye", "Bye", "See you", "See you again", "See you later", "Have a nice day"],
+          "responses": ["See you!", "Have a nice day!"],
+          "context": [""]
+        },
+
+
+        { "tag": "Thanks",
+          "patterns": ["Thank you", "Thanks", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Nice", "Ok"],
+          "responses": ["Always happy to help you!", "Any time!", "My pleasure!"],
+          "context": [""]
+        },
+
+
+        { "tag": "Name",
+          "patterns": ["What is your name?", "Who are you?", "Do you have a name?", "Your name?", "Name?"],
+          "responses": ["Nice to meet you! I'm Friday"],
+          "context": [""]
+        }
+
+    ]
+
+}
