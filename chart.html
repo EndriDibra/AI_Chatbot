@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+
+	title:{
+		text:"Student's Text Sentiment Analysis"
+	},
+
+    axisX:{
+		interval: 1
+	},
+	axisY2:{
+		interlacedColor: "rgba(1,77,101,.2)",
+		gridColor: "rgba(1,77,101,.1)",
+        title: "Number of Companies"
+
+	},
+
+	data: [{
+		type: "pie",
+		name: "companies",
+		axisYType: "secondary",
+		color: "#014D65",
+		dataPoints: [
+
+			{ y: 30, label: "Negative" },
+			{ y: 700, label: "Positive" },
+			{ y: 5, label: "Neutral" }
+
+        ]
+	}]
+});
+
+chart.render();
+}
+
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
